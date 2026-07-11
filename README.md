@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <css>/* Remove browser default padding and margins */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Prevents unwanted scrollbars */
-}
-
-.full-page-img {
-    width: 100vw;       /* 100% of viewport width */
-    height: 100vh;      /* 100% of viewport height */
-    object-fit: cover;  /* Crops and scales without losing aspect ratio */
-    object-position: center; /* Keeps the center of the image focused */
-    display: block;     /* Eliminates default inline spacing at bottom */
-}
-</css>
     <title>Full Page Responsive Image</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset margins and default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensure the document takes up the full browser screen */
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars */
+            background-color: #000; /* Dark background fallback while loading */
+        }
+
+        /* Responsive image styling */
+        .full-page-img {
+            width: 100vw;            /* 100% of the viewport width */
+            height: 100vh;           /* 100% of the viewport height */
+            object-fit: cover;       /* Automatically scales and crops without stretching */
+            object-position: center; /* Keeps the center of the image in focus */
+            display: block;          /* Removes default inline spacing at the bottom */
+        }
+    </style>
 </head>
 <body>
 
-    <img src="https://github.com/periodictabletennis/periodictabletennis.github.io/blob/b7f0a547f5ea5d86b6b5d5289e26b7ae921d57b7/ptt.PNG" alt="Periodic Table Tennis" class="full-page-img">
+    <!-- 
+      REPLACE WITH YOUR IMAGE:
+      You can use a local file path (like "my-photo.jpg") or a web URL link. 
+    -->
+    <img src="https://unsplash.com" alt="Responsive full page background" class="full-page-img">
 
 </body>
 </html>
