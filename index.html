@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Page Responsive Image</title>
     <style>
-        /* Zero out default padding and layout constraints */
+        /* Clear page margins */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Lock the body wrapper tightly to the edges of the display */
+        /* Make container match full screen size */
         html, body {
             width: 100%;
             height: 100%;
             overflow: hidden; 
-            background-color: #000; /* Smooth backdrop color */
+            background-color: #000; /* Fills empty side spaces with clean black */
         }
 
         body {
-            /* Loads your specific image asset */
             background-image: url('ptt.PNG'); 
             
-            /* Dynamically stretches or scales the file to cover the entire page */
-            background-size: cover; 
+            /* KEY CHANGE: Shows the whole uncropped image */
+            background-size: contain; 
             
-            /* Forces the absolute mathematical center to stay anchored */
+            /* Keeps the image perfectly centered */
             background-position: center center; 
             
-            /* Disables tiling repeating bugs on wide desktop resolutions */
+            /* Prevents image from repeating or duplicating */
             background-repeat: no-repeat; 
         }
     </style>
 </head>
 <body>
-    <!-- The body background handles the rendering, so no HTML tags are needed inside here -->
+    <!-- Kept clear as the background handles layout presentation -->
 </body>
 </html>
+
