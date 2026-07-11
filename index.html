@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Page Responsive Image</title>
     <style>
-        /* Reset margins and default padding */
+        /* Zero out default padding and layout constraints */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Ensure the document container covers the whole screen */
+        /* Lock the body wrapper tightly to the edges of the display */
         html, body {
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Disables scrollbars */
-            background-color: #000; /* Black fallback while image loads */
+            overflow: hidden; 
+            background-color: #000; /* Smooth backdrop color */
         }
 
-        /* Responsive full-screen image rules */
-        .full-page-img {
-            width: 100vw;            /* 100% of screen width */
-            height: 100vh;           /* 100% of screen height */
-            object-fit: cover;       /* Scales and crops without distortion */
-            object-position: center; /* Keeps center of image focused */
-            display: block;          /* Removes default bottom baseline gap */
+        body {
+            /* Loads your specific image asset */
+            background-image: url('ptt.PNG'); 
+            
+            /* Dynamically stretches or scales the file to cover the entire page */
+            background-size: cover; 
+            
+            /* Forces the absolute mathematical center to stay anchored */
+            background-position: center center; 
+            
+            /* Disables tiling repeating bugs on wide desktop resolutions */
+            background-repeat: no-repeat; 
         }
     </style>
 </head>
 <body>
-
-    <!-- Links directly to your ptt.PNG asset -->
-    <img src="ptt.PNG" alt="Full screen background" class="full-page-img">
-
+    <!-- The body background handles the rendering, so no HTML tags are needed inside here -->
 </body>
 </html>
