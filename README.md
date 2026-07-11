@@ -29,7 +29,7 @@ body, html {
 </head>
 <body>
 
-    <img src="your-image.jpg" alt="Descriptive alt text" class="full-page-img">
+    <img src="https://github.com/periodictabletennis/periodictabletennis.github.io/blob/b7f0a547f5ea5d86b6b5d5289e26b7ae921d57b7/ptt.PNG" alt="Periodic Table Tennis" class="full-page-img">
 
 </body>
 </html>
